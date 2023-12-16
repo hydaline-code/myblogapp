@@ -3,7 +3,8 @@ class Like < ApplicationRecord
   belongs_to :post, counter_cache: true
 
   after_create :update_post_likes_counter
-private
+
+  private
 
   def update_post_likes_counter
     post.update(likes_counter: post.likes.count)
