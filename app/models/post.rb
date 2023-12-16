@@ -1,13 +1,15 @@
-class Post < ApplicationRecord
+class Post < ApplicationRecord 
   belongs_to :user, class_name: 'User', foreign_key: 'author_id', counter_cache: :posts_counter
   has_many :comments, dependent: :destroy
   has_many :likes, dependent: :destroy
 
-  def update_likes_count
-    update(likes_counter: likes.count)
-  end
-
+after_create : update_posts_counter
   def recent_comments
     comments.order(created_at: :desc).limit(5)
+  end
+
+  private 
+  def update_posts_counter
+    author.update(posts_counter: author.posts.count)
   end
 end
