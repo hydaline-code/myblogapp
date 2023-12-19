@@ -19,5 +19,6 @@ RSpec.describe User, type: :model do
       user = User.new(name: 'shahadat', photo_link: 'url', bio: 'developer', posts_counter: 1)
       expect(user).to be_valid
     end
-end
+   
+  end
 end
