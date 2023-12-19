@@ -6,6 +6,9 @@ class Post < ApplicationRecord
   def update_likes_count
     update(likes_counter: likes.count)
   end
+  # def update_post_likes_counter
+  #   post.update(likes_counter: post.likes.counter)
+  # end
 
   def recent_comments
     comments.order(created_at: :desc).limit(5)
