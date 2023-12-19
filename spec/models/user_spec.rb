@@ -19,6 +19,24 @@ RSpec.describe User, type: :model do
       user = User.new(name: 'shahadat', photo_link: 'url', bio: 'developer', posts_counter: 1)
       expect(user).to be_valid
     end
-   
   end
+  describe '#most_recent_posts' do
+it 'returns the  most recent 3 posts' do
+  user = User.new(name: 'shahadat', photo_link: 'url', bio: 'developer', posts_counter: 0)
+  user.save
+  post1 = Post.new(author_id: user.id, title: 'new title', text: 'This is my second post1',comments_counter: 0, likes_counter: 0)
+   post1.save
+  # puts "post1 #{post1.errors.full_messages}"
+ 
+  post2 = Post.new(author_id: user.id, title: 'new title', text: 'This is my second post2',comments_counter: 0, likes_counter: 0)
+   post2.save
+  # puts "post2 #{post1.errors.full_messages}"
+
+  post3 = Post.new(author_id: user.id, title: 'new title', text: 'This is my second post3',comments_counter: 0, likes_counter: 0)
+   post3.save
+  # puts "post3 #{post1.errors.full_messages}"
+
+  expect(user.most_recent_posts).to eq([post3, post2, post1])
+end
+end
 end
