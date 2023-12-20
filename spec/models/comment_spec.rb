@@ -25,9 +25,9 @@ RSpec.describe Comment, type: :model do
     
       expect(comment).to be_valid
     
-      puts "Before update: post.comments_counter = #{post.comments_counter}"
+     
       comment.save
-      puts "After update: post.comments_counter = #{post.comments_counter}"
+    
     
       expect(post.comments_counter).to eq(1)
     end
