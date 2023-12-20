@@ -1,15 +1,5 @@
 require 'rails_helper'
 
-# RSpec.describe Comment, type: :model do
-#   describe 'associations' do
-#     it 'should belong to a user' do
-#       user = User.new(name: 'shahadat', photo_link: 'url', bio: 'developer')
-#       post = Post.new(author_id: user.id, title: 'new title', text: 'This is my second post1',comments_counter: 0, likes_counter: 0)
-#       comment = Comment.new(post: first_post.author_id, text: 'new comment test!')
-#       expect(comment).to_not be_valid
-  
-#     end
-# end
 
 RSpec.describe Comment, type: :model do
   describe 'associations' do
