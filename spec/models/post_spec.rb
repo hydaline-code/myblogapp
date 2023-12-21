@@ -45,6 +45,20 @@ RSpec.describe Post, type: :model do
     end
   end
 
+  describe '#increment_posts_counter' do
+    it 'increments posts_counter when a new post is created' do
+      user = User.new(name: 'bob', photo_link: 'url', bio: 'developer', posts_counter: 0)
+      user.save
+      puts "Before update:posts_counter = #{user.posts_counter}"
+      post = Post.new(author_id: user.id, title: 'new title', text: 'This is my post for post counter',comments_counter: 0, likes_counter: 0)
+      post.save
+
+      user.reload
+      expect(user.posts_counter).to eq(1)
+      puts "after update: posts_counter = #{user.posts_counter}"
+    end
+  end
+
   describe '#recent_comments' do
     it 'returns the most recent 5 comments' do
       user = User.new(name: 'bob', photo_link: 'url', bio: 'developer', posts_counter: 0)
