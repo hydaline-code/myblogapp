@@ -50,7 +50,8 @@ RSpec.describe Post, type: :model do
       user = User.new(name: 'bob', photo_link: 'url', bio: 'developer', posts_counter: 0)
       user.save
       puts "Before update:posts_counter = #{user.posts_counter}"
-      post = Post.new(author_id: user.id, title: 'new title', text: 'This is my post for post counter',comments_counter: 0, likes_counter: 0)
+      post = Post.new(author_id: user.id, title: 'new title', text: 'This is my post for post counter',
+                      comments_counter: 0, likes_counter: 0)
       post.save
 
       user.reload
