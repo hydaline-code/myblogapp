@@ -13,3 +13,31 @@
  *= require_tree .
  *= require_self
  */
+
+ .user-container {
+
+ }
+
+ .user-info {
+  border: rgb(0, 255, 234) 2px solid;
+  margin-left: 1em;
+  width: 250px;
+ }
+
+ .user-image {
+  border: green solid;
+  width: 150px;
+ }
+
+ .user-card {
+  margin-top: 1em;
+  display: flex;
+ }
+
+ .user-info > p {
+  margin-left: 1.5em;
+ }
+
+ h2 {
+  color: blue;
+ }
