@@ -4,13 +4,13 @@
 <p>Bio: <%= @user.bio %></p>
 
 <h2>Posts</h2>
-<% @user.posts.each do |post| %>
-  <div class="post">
+ <div class="post">
+  <% @user.posts.each do |post| %>
     <h3><%= post.title %></h3>
     <p><%= post.text%></p>
    <p class="comment">Number of comments: <%= post.comments.count %></p>
    <p class="likes">Number of likes: <%= post.likes.count %></p>
-  </div>
-<% end %>
+  <% end %>
+ </div>
 <button class="all-posts">See all post</button>
 </div>

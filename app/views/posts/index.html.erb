@@ -1,9 +1,41 @@
 <!-- app/views/posts/index.html.erb -->
-<ul>
+<div class="user-post">
+
+  <div class="user-card">
+    <div class="user-image">
+          <img src="<%= @user.photo_link %>" alt="<%= @user.name %> photo" class="img-fluid rounded-circle">
+      </div>
+      <div class="user-info">
+  <h1><%= @user.name %></h1>
+  <p class="comment">Number of comments: <%= @user.comments.count %></p>
+  </div>
+</div>
+
+  <div class="post">
+    <h2>List of Posts</h2>
+    <ul>
+      <% @posts.each_with_index do |post, index| %>
+    <h3>Post <%= index + 1 %></h3>
+    <p><strong>Title:</strong> <%= post.title %></p>
+    <p><strong>Content:</strong> <%= post.text %></p>
+    <p class="comment">Number of comments: <%= post.comments.count %></p>
+   <p class="likes">Number of likes: <%= post.likes.count %></p>
+    <ul>  
+      <% end %>
+    </ul>
+  </div>
+  <div class="all-comments">
+  <h2>All Comments</h2>
   <% @posts.each do |post| %>
-    <li>
-      <h3><%= post.title %></h3>
-      
-    </li>
+    <p class="comment">Number of comments: <%= post.comments.count %></p>
+    <ul>
+      <% post.comments.each do |comment| %>
+        <li>
+          <strong><%= comment.user.name %></strong>: <%= comment.text %>
+        </li>
+      <% end %>
+    </ul>
   <% end %>
-</ul>
+</div>
+
+</div>
