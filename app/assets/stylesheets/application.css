@@ -14,30 +14,80 @@
  *= require_self
  */
 
- .user-container {
-
+ .user-container,
+ .user-post {
+  width: 350px;
+  height: 500px;
+  border: solid 2px;
+ padding: 0 0.5em 0 0.5em;
  }
 
  .user-info {
-  border: rgb(0, 255, 234) 2px solid;
+  border: rgb(0, 0, 0) 2px solid;
   margin-left: 1em;
-  width: 250px;
+  width: 220px;
+  height: 60px;
  }
 
  .user-image {
-  border: green solid;
-  width: 150px;
+  border: rgb(0, 0, 0) 2px solid;
+  width: 100px;
+  height: 60px;
  }
 
  .user-card {
-  margin-top: 1em;
+  margin-top: 0.5em;
   display: flex;
  }
 
- .user-info > p {
-  margin-left: 1.5em;
+ .user-info > h3 {
+  position: absolute;
+  
  }
 
- h2 {
-  color: blue;
+ .user-info > p {
+  margin-left: 3em;
+ position: relative;
+ top: 1.5em;
  }
+
+ .user-bio {
+  border: rgb(0, 0, 0) 2px solid;
+  width: 340px;
+  height: 60px;
+  margin-top: 1em;
+  text-align: left;
+ }
+
+ .user-bio > p {
+  margin-left: 0.5em;
+ }
+
+ .allposts-user {
+  border: rgb(0, 0, 0) 2px solid;
+  width: 340px;
+  height: 140px;
+  margin-top: 1em;
+ }
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+}
+
+.allposts-user > h3,
+ .p-text {
+  margin-left: 0.3em;
+}
+
+.post-comment {
+  margin-right: 0.3em;
+}
+.user-post  button  {
+  margin-top: 2em;
+  position: relative;
+  left: 30%;
+  
+}

@@ -1,0 +1,15 @@
+<!-- app/views/posts/show.html.erb -->
+<div>
+    <h4>Post <%= @post.id %> by <%= @post.user.name %></h4>
+    <p class="comment">comments: <%= @post.comments.count %></p>
+   <p class="likes"> likes: <%= @post.likes.count %></p>
+  </div>
+<p><strong>Content:</strong> <%= @post.text %></p>
+<p class="comment">All comments: <%= @post.comments.count %></p>
+<ul>
+  <% @post.comments.each do |comment| %>
+    <li>
+      <strong><%= comment.user.name %></strong>: <%= comment.text %>
+    </li>
+  <% end %>
+</ul>
