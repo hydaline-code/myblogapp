@@ -19,7 +19,8 @@
 }
 
  .user-container,
- .user-post {
+ .user-post,
+ .a-post {
   width: 350px;
   height: 500px;
   border: solid 2px;
@@ -56,7 +57,8 @@
  top: 1.5em;
  }
 
- .user-bio {
+ .user-bio,
+ .post-id  {
   border: rgb(0, 0, 0) 2px solid;
   width: 340px;
   height: 60px;
@@ -104,4 +106,21 @@
 .all-comments li {
   list-style: none;
   text-align: left;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-comment {
+  display: flex;
+}
+
+.likes-comment p {
+ margin-left: 0.3em;
+}
+
+.post-text {
+  margin: 0.5em 0 0 0.5em;
 }
