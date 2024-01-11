@@ -18,6 +18,15 @@ class PostsController < ApplicationController
   end 
 
   def find_post
-    @post = @user.posts.find(params[:id])
+    find_user
+    @post = @user.posts.find_by(id: params[:id])
+  # Check if both the user and the post exist
+ 
+  unless @post
+    respond_to do |format|
+      format.html { render 'post_not_found' }
+      format.js   { render 'post_not_found' }
+    end
+    end
   end
 end

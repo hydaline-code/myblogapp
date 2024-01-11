@@ -13,6 +13,10 @@
  *= require_tree .
  *= require_self
  */
+ * {
+  margin: 0;
+  padding: 0;
+}
 
  .user-container,
  .user-post {
@@ -20,6 +24,7 @@
   height: 500px;
   border: solid 2px;
  padding: 0 0.5em 0 0.5em;
+ margin: 1em 0 0 1em;
  }
 
  .user-info {
@@ -66,7 +71,7 @@
  .allposts-user {
   border: rgb(0, 0, 0) 2px solid;
   width: 340px;
-  height: 140px;
+  height: 90px;
   margin-top: 1em;
  }
 
@@ -89,5 +94,14 @@
   margin-top: 2em;
   position: relative;
   left: 30%;
-  
+}
+.all-comments {
+  width: 97%;
+  height: auto;
+  border: rgb(0, 0, 0) 2px solid;
+}
+
+.all-comments li {
+  list-style: none;
+  text-align: left;
 }
