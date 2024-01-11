@@ -13,69 +13,68 @@
  *= require_tree .
  *= require_self
  */
- * {
+* {
   margin: 0;
   padding: 0;
 }
 
- .user-container,
- .user-post,
- .a-post {
+.user-container,
+.user-post,
+.a-post {
   width: 350px;
   height: 500px;
   border: solid 2px;
- padding: 0 0.5em 0 0.5em;
- margin: 1em 0 0 1em;
- }
+  padding: 0 0.5em 0 0.5em;
+  margin: 1em 0 0 1em;
+}
 
- .user-info {
+.user-info {
   border: rgb(0, 0, 0) 2px solid;
   margin-left: 1em;
   width: 220px;
   height: 60px;
- }
+}
 
- .user-image {
+.user-image {
   border: rgb(0, 0, 0) 2px solid;
   width: 100px;
   height: 60px;
- }
+}
 
- .user-card {
+.user-card {
   margin-top: 0.5em;
   display: flex;
- }
+}
 
- .user-info > h3 {
+.user-info > h3 {
   position: absolute;
-  
- }
+}
 
- .user-info > p {
+.user-info > p {
   margin-left: 3em;
- position: relative;
- top: 1.5em;
- }
+  position: relative;
+  top: 1.5em;
+}
 
- .user-bio,
- .post-id  {
+.user-bio,
+.post-id {
   border: rgb(0, 0, 0) 2px solid;
   width: 340px;
   height: 60px;
   margin-top: 1em;
   text-align: left;
- }
+}
 
- .user-bio > p {
+.user-bio > p {
   margin-left: 0.5em;
- }
+}
 
- .allposts-user {
+.allposts-user {
   border: rgb(0, 0, 0) 2px solid;
   width: 340px;
   height: 90px;
   margin-top: 1em;
- }
+}
 
 .likes {
   display: flex;
@@ -85,18 +84,20 @@
 }
 
 .allposts-user > h3,
- .p-text {
+.p-text {
   margin-left: 0.3em;
 }
 
 .post-comment {
   margin-right: 0.3em;
 }
-.user-post  button  {
+
+.user-post button {
   margin-top: 2em;
   position: relative;
   left: 30%;
 }
+
 .all-comments {
   width: 97%;
   height: auto;
@@ -118,7 +119,7 @@
 }
 
 .likes-comment p {
- margin-left: 0.3em;
+  margin-left: 0.3em;
 }
 
 .post-text {

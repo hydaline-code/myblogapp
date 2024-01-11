@@ -10,6 +10,6 @@ class UsersController < ApplicationController
 
   def user_posts
     @user = User.find(params[:id])
-    @posts = @user.posts.includes(:comments, :user)  # Fetch posts with associated comments and user
+    @posts = @user.posts.includes(:comments, :user) # Fetch posts with associated comments and user
   end
 end
