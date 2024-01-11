@@ -62,6 +62,7 @@
 > - **Post a blog**
 > - **Like a blog**
 > - **Comment on a blog**
+> - **Add controllers and routes to the app**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,7 +131,7 @@
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> - **Archiving of   posts**
+> - **Add forms**
 > - **User Authentication**
 > - **Other states of emotions**
 
