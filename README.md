@@ -63,6 +63,7 @@
 > - **Like a blog**
 > - **Comment on a blog**
 > - **Add controllers and routes to the app**
+> - **Add Rspecs controllers testing using requests**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
