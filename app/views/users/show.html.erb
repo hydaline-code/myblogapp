@@ -25,5 +25,7 @@
       </div>
   </div>
 <% end %>
-  <button class="all-posts">See all post</button>
+
+  <button class="all-posts-button" onclick="window.location.href='<%= user_posts_path(@user) %>'">See all posts</button>
+
 </div>

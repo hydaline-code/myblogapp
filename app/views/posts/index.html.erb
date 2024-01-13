@@ -12,7 +12,8 @@
     </div>
       <% @posts.each_with_index do |post, index| %>
       <div class="allposts-user">
-      <h3>Post <%= index + 1 %></h3>
+      
+       <h4><%= link_to "Post #{index + 1}", user_post_path(@user, post) %> </h4>
       <p><%= post.text %></p>
       <div class="likes">
          <p class="comment">comments: <%= post.comments.count %></p>
@@ -31,5 +32,6 @@
     </ul>
   <% end %>
 </div>
-<button class="all-posts">Pagination</button>
+<div class="pagination">
+    <%= will_paginate @posts, :page_links => false %>
 </div>
