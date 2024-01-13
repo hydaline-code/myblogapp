@@ -33,7 +33,6 @@ RSpec.describe UsersController, type: :request do
 
     it 'includes the correct placeholder text in the response body' do
       get "/users/#{user.id}"
-      puts response.body
       expect(response.body).to include('<p>Bio: bio</p>')
     end
   end
