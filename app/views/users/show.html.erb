@@ -1,6 +1,7 @@
 
 <div class="user-post">
    <div class="user-card">
+    
     <div class="user-image">
           <img src="<%= @user.photo_link %>" alt="<%= @user.name %> photo" class="img-fluid rounded-circle">
       </div> 
@@ -13,7 +14,7 @@
   <div class="user-bio">
   <p>Bio: <%= @user.bio %></p>
   </div>
-
+  
  <% @user.posts.each_with_index do |post, index| %>
 <div class="allposts-user">
     <h3>Post <%= index + 1 %></h3>
@@ -24,5 +25,5 @@
       </div>
   </div>
 <% end %>
-  <button class="all-posts">See all posts</button>
+  <button class="all-posts">See all post</button>
 </div>
