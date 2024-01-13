@@ -8,23 +8,22 @@ class PostsController < ApplicationController
   end
 
   def show; end
-  
-def new
-  @user = current_user
-  @post = Post.new
-end
 
-
-def create
-  @post =  Post.create(title: params[:title], text: params[:text], author_id:  current_user.id, comments_counter: 0, likes_counter: 0)
-puts "post id is #{ @post.id}"
-  if @post.save
-    redirect_to user_post_path(current_user, @post), notice: 'Post created successfully.'
-  else
-    render :ne
+  def new
+    @user = current_user
+    @post = Post.new
   end
-end
 
+  def create
+    @post = Post.create(title: params[:title], text: params[:text], author_id: current_user.id, comments_counter: 0,
+                        likes_counter: 0)
+    puts "post id is #{@post.id}"
+    if @post.save
+      redirect_to user_post_path(current_user, @post), notice: 'Post created successfully.'
+    else
+      render :ne
+    end
+  end
 
   private
 
@@ -54,5 +53,3 @@ end
     params.require(:post).permit(:title, :text)
   end
 end
-
-
