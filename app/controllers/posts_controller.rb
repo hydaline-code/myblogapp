@@ -7,7 +7,10 @@ class PostsController < ApplicationController
     @posts = @user.posts.includes(:comments)
   end
 
-  def show; end
+  def show
+    @post = Post.find(params[:id])
+    render :show
+  end
 
   private
 
@@ -18,13 +21,18 @@ class PostsController < ApplicationController
   def find_post
     find_user
     @post = @user.posts.find_by(id: params[:id])
-    # Check if both the user and the post exist
 
-    return if @post
+    #   return if @post
 
-    respond_to do |format|
-      format.html { render 'post_not_found' }
-      format.js { render 'post_not_found' }
-    end
+    #   respond_to do |format|
+    #     format.html { render 'post_not_found'and return }
+    #     format.js { render 'post_not_found' and return }
+    #   end
+    # end
+
+    return unless @post.nil?
+
+    flash[:error] = 'Post not found'
+    redirect_to user_path(@user)
   end
 end
