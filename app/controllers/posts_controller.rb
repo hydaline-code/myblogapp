@@ -7,9 +7,7 @@ class PostsController < ApplicationController
     @posts = @user.posts.includes(:comments).paginate(page: params[:page], per_page: 2)
   end
 
-  def show
-
-  end
+  def show; end
 
   private
 
