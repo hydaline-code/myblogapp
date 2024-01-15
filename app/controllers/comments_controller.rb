@@ -8,7 +8,6 @@ class CommentsController < ApplicationController
 
   def create
     @post = Post.find(params[:post_id])
-    # @comment = @post.comments.new(comment_params)
     @comment = @post.comments.new(text: params[:text], user_id: current_user.id)
     @author = User.find(@post.author_id)
     @comment.user = current_user
