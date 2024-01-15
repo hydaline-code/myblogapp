@@ -1,0 +1,7 @@
+<h3>Add New Like</h3>
+
+<div>
+    <%= form_with( url: user_post_likes_path(@post), method: :post) do |form| %>
+    <%= form.submit 'Add Like'%>
+    <% end %>
+</div>
