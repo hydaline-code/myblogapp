@@ -9,20 +9,19 @@
           <h3><%= @user.name %></h3>
           <p class="comment">Number of posts: <%= @user.posts.count %></p>
        </div>
+
     </div>
+
+      <div>
       <% @posts.each_with_index do |post, index| %>
       <div class="allposts-user">
-      
        <h4><%= link_to "Post #{index + 1}", user_post_path(@user, post) %> </h4>
       <p><%= post.text %></p>
       <div class="likes">
          <p class="comment">comments: <%= post.comments.count %></p>
         <p class="likes"> likes: <%= post.likes.count %></p>
       </div>
-    </div>  
-      <% end %>
   <div class="all-comments">
-  <% @posts.each do |post| %>
     <ul>
       <% post.comments.each do |comment| %>
         <li>
@@ -30,8 +29,13 @@
         </li>
       <% end %>
     </ul>
-  <% end %>
+</div>
+
+</div>
+ <% end %>
 </div>
 <div class="pagination">
     <%= will_paginate @posts, :page_links => false %>
 </div>
+</div>
+

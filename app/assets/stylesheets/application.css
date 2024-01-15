@@ -72,7 +72,7 @@
 .allposts-user {
   border: rgb(0, 0, 0) 2px solid;
   width: 340px;
-  height: 90px;
+  height: auto;
   margin-top: 1em;
 }
 
@@ -99,7 +99,7 @@
 }
 
 .all-comments {
-  width: 97%;
+  width: 338px;
   height: auto;
   border: rgb(0, 0, 0) 2px solid;
 }
