@@ -20,12 +20,17 @@
 
 .user-container,
 .user-post,
-.a-post {
+.a-post,
+.form {
   width: 350px;
   height: 500px;
   border: solid 2px;
   padding: 0 0.5em 0 0.5em;
   margin: 1em 0 0 1em;
+}
+
+.user-post {
+  height: auto;
 }
 
 .user-info {
@@ -133,4 +138,37 @@
 
 .pagination a {
   text-decoration: none;
+}
+
+.form h3 {
+  margin-top: 1em;
+}
+
+.form-text {
+  width: 70%;
+  height: 50px;
+  margin-left: 1em;
+}
+.label {
+  margin-top: 1em;
+}
+
+.form-label {
+  width: 68%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+.form-t {
+  display: flex;
+}
+
+.btn-primary {
+  width: 70px;
+  padding: 0.2em;
+  margin: 10% 0  0 40%;
+  font-size: 14px;
+  border: 2px solid #72c5fc;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 4px;
 }

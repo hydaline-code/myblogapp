@@ -1,6 +1,5 @@
 
 <div class="user-post">
-
     <div class="user-card">
           <div class="user-image">
               <img src="<%= @user.photo_link %>" alt="<%= @user.name %> photo" class="img-fluid rounded-circle">
@@ -9,13 +8,13 @@
           <h3><%= @user.name %></h3>
           <p class="comment">Number of posts: <%= @user.posts.count %></p>
        </div>
-
     </div>
 
       <div>
       <% @posts.each_with_index do |post, index| %>
       <div class="allposts-user">
-       <h4><%= link_to "Post #{index + 1}", user_post_path(@user, post) %> </h4>
+       <h4><%= link_to "Post #{index + 1} ", user_post_path(@user, post) %> </h4>
+       
       <p><%= post.text %></p>
       <div class="likes">
          <p class="comment">comments: <%= post.comments.count %></p>
