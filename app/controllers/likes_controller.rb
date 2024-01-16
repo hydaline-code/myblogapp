@@ -24,7 +24,8 @@ class LikesController < ApplicationController
 
     respond_to do |format|
       if @like.save
-        format.html { redirect_to user_post_path(@post.user, @post), notice: 'Like was successfully created.' }
+        flash[:notice] = 'Like created successfully.'
+        format.html { redirect_to user_post_path(@post.user, @post) }
       else
         format.html { render :new, status: :unprocessable_entity }
       end

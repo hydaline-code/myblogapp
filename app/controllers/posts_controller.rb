@@ -28,7 +28,8 @@ class PostsController < ApplicationController
     @post = Post.new(post_params.merge(author_id: current_user.id, comments_counter: 0, likes_counter: 0))
   
     if @post.save
-      redirect_to user_post_path(current_user, @post), notice: 'Post created successfully.'
+      flash[:notice] = 'Post created successfully.'
+      redirect_to user_post_path(current_user, @post)
     else
       render :new
     end
