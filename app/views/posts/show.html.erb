@@ -1,0 +1,19 @@
+<div class="a-post">
+<div class="post-id ">
+  <div class="post-info">
+      <h4>Post <%= @post.id %> by <%= @post.user.name %></h4>
+      <div class="likes-comment">
+        <p class="comment">comments: <%= @post.comments.count %></p>
+        <p class="likes"> likes: <%= @post.likes.count %></p>
+      </div>
+    </div>
+    <p class="post-text"> <%= @post.text %></p>
+  </div>
+  <div class="all-comments">
+    <% @post.comments.each do |comment| %>
+        <strong><%= comment.user.name %></strong>: <%= comment.text %>
+    <% end %>
+  </div> 
+</div>
+
+</div>
