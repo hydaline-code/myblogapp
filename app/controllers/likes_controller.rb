@@ -11,7 +11,6 @@
 #   end
 # end
 
-
 class LikesController < ApplicationController
   def new
     @user = current_user
