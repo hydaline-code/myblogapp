@@ -197,3 +197,14 @@
   display: flex;
   margin-top: 1em;
 }
+
+.alert-container {
+  position: relative;
+}
+
+.alert {
+ position: absolute;
+ top: 0; 
+ color: red;
+ left: 10%;
+}

@@ -12,7 +12,9 @@
   </div>
   <div class="all-comments">
     <% @post.comments.each do |comment| %>
+    <ul>
         <strong><%= comment.user.name %></strong>: <%= comment.text %>
+        </ul>
     <% end %>
   </div> 
 </div>
