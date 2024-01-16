@@ -162,7 +162,8 @@
   display: flex;
 }
 
-.btn-primary {
+.btn-primary,
+.btn-comment {
   width: 70px;
   padding: 0.2em;
   margin: 10% 0  0 40%;
@@ -171,4 +172,18 @@
   color: #fff;
   background-color: #3498db;
   border-radius: 4px;
+}
+
+.form-comment {
+  width: 90%;
+  height: 40px;
+  margin-left: 5px;
+}
+.btn-comment {
+ width: 100px;
+}
+
+.form .flex {
+  display: flex;
+  margin-top: 1em;
 }
