@@ -149,6 +149,7 @@
   height: 50px;
   margin-left: 1em;
 }
+
 .label {
   margin-top: 1em;
 }
@@ -158,6 +159,7 @@
   margin-left: 1em;
   margin-bottom: 1em;
 }
+
 .form-t {
   display: flex;
 }
@@ -186,8 +188,9 @@
   height: 40px;
   margin-left: 5px;
 }
+
 .btn-comment {
- width: 100px;
+  width: 100px;
 }
 
 .form .flex {
