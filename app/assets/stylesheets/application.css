@@ -18,13 +18,15 @@
   padding: 0;
 }
 
-.user-container,
+body {
+  padding: 32px;
+}
+
 .user-post,
 .a-post,
 .form {
   width: 350px;
   height: 500px;
-  border: solid 2px;
   padding: 0 0.5em 0 0.5em;
   margin: 1em 0 0 1em;
 }
@@ -36,14 +38,20 @@
 .user-info {
   border: rgb(0, 0, 0) 2px solid;
   margin-left: 1em;
-  width: 220px;
+  padding: 8px;
   height: 60px;
+  flex-grow: 1;
 }
 
 .user-image {
   border: rgb(0, 0, 0) 2px solid;
   width: 100px;
   height: 60px;
+}
+.user-image > img {
+  position: relative;
+    width: 100px;
+    height: 60px;
 }
 
 .user-card {
@@ -56,7 +64,7 @@
 }
 
 .user-info > p {
-  margin-left: 3em;
+ text-align: right;
   position: relative;
   top: 1.5em;
 }
