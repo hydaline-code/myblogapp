@@ -26,6 +26,4 @@ class PostsController < ApplicationController
       format.js { render 'post_not_found' and return }
     end
   end
-
-  
 end
