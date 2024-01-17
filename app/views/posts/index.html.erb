@@ -12,7 +12,6 @@
     </div>
       <% @posts.each_with_index do |post, index| %>
       <div class="allposts-user">
-      
        <h4><%= link_to "Post #{index + 1}", user_post_path(@user, post) %> </h4>
       <p><%= post.text %></p>
       <div class="likes">
