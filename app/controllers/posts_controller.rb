@@ -27,9 +27,5 @@ class PostsController < ApplicationController
     end
   end
 
-  #   return unless @post.nil?
-
-  #   flash[:error] = 'Post not found'
-  #   redirect_to user_path(@user)
-  # end
+  
 end
