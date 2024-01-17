@@ -19,14 +19,13 @@ class PostsController < ApplicationController
     find_user
     @post = @user.posts.find_by(id: params[:id])
 
-      return if @post
+    return if @post
 
-      respond_to do |format|
-        format.html { render 'post_not_found'and return }
-        format.js { render 'post_not_found' and return }
-       
-      end
+    respond_to do |format|
+      format.html { render 'post_not_found' and return }
+      format.js { render 'post_not_found' and return }
     end
+  end
 
   #   return unless @post.nil?
 
