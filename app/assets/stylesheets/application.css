@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
-* {
+ * {
   margin: 0;
   padding: 0;
 }
@@ -23,16 +24,10 @@ body {
 }
 
 .user-post,
-.a-post,
-.form {
-  width: 350px;
-  height: 500px;
+.a-post {
+  border: solid 2px;
   padding: 0 0.5em 0 0.5em;
   margin: 1em 0 0 1em;
-}
-
-.user-post {
-  height: auto;
 }
 
 .user-info {
@@ -46,12 +41,7 @@ body {
 .user-image {
   border: rgb(0, 0, 0) 2px solid;
   width: 100px;
-  height: 60px;
-}
-.user-image > img {
-  position: relative;
-    width: 100px;
-    height: 60px;
+  height: 80px;
 }
 
 .user-card {
@@ -64,7 +54,8 @@ body {
 }
 
 .user-info > p {
- text-align: right;
+  margin-left: 3em;
+  text-align: right;
   position: relative;
   top: 1.5em;
 }
@@ -72,8 +63,6 @@ body {
 .user-bio,
 .post-id {
   border: rgb(0, 0, 0) 2px solid;
-  width: 340px;
-  height: 60px;
   margin-top: 1em;
   text-align: left;
 }
@@ -84,8 +73,6 @@ body {
 
 .allposts-user {
   border: rgb(0, 0, 0) 2px solid;
-  width: 340px;
-  height: auto;
   margin-top: 1em;
 }
 
@@ -106,13 +93,12 @@ body {
 }
 
 .user-post button {
-  margin-top: 2em;
+  margin: 2em 0 1em 0;
   position: relative;
-  left: 30%;
+  left: 50%;
 }
 
 .all-comments {
-  width: 338px;
   height: auto;
   border: rgb(0, 0, 0) 2px solid;
 }
@@ -147,6 +133,7 @@ body {
 .pagination a {
   text-decoration: none;
 }
+
 
 .form h3 {
   margin-top: 1em;
@@ -211,8 +198,10 @@ body {
 }
 
 .alert {
+border: 2px solid #23d034;
  position: absolute;
- top: 0; 
- color: red;
+ top: 2px; 
+ color: rgb(0, 255, 34);
  left: 10%;
+ border-radius: 10px;
 }
