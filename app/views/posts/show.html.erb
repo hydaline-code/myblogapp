@@ -5,10 +5,18 @@
       <div class="likes-comment">
         <p class="comment">comments: <%= @post.comments.count %></p>
         <p class="likes"> likes: <%= @post.likes.count %></p>
-      
       </div>
+      
     </div>
-    <p class="post-text"> <%= @post.text %></p>
+    
+   <div class="post-text">
+  <p class="post-text"><%= @post.text %></p>
+  <%= form_with(model: [@post, @post.likes.build], url: post_likes_path(@post)) do |form| %>
+    <%= form.submit 'Like', class: 'btn-like' %>
+  <% end %>
+</div>
+
+   
   </div>
   <div class="all-comments">
     <% @post.comments.each do |comment| %>
@@ -17,6 +25,8 @@
         </ul>
     <% end %>
   </div> 
+  
+   </div>
 </div>
-
+   
 </div>
