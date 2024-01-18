@@ -14,7 +14,7 @@
  *= require_tree .
  *= require_self
  */
- * {
+* {
   margin: 0;
   padding: 0;
 }
@@ -134,7 +134,6 @@ body {
   text-decoration: none;
 }
 
-
 .form h3 {
   margin-top: 1em;
 }
@@ -198,10 +197,10 @@ body {
 }
 
 .alert {
-border: 2px solid #23d034;
- position: absolute;
- top: 2px; 
- color: rgb(0, 255, 34);
- left: 10%;
- border-radius: 10px;
+  border: 2px solid #23d034;
+  position: absolute;
+  top: 2px;
+  color: rgb(0, 255, 34);
+  left: 10%;
+  border-radius: 10px;
 }
