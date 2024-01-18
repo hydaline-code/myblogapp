@@ -60,7 +60,7 @@ body {
   top: 1.5em;
 }
 
-.post-text {
+.posttext {
   display: flex;
   justify-content: space-between;
 }

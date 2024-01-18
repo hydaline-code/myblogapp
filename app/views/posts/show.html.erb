@@ -9,7 +9,7 @@
       
     </div>
     
-   <div class="post-text">
+   <div class="posttext">
   <p class="post-text"><%= @post.text %></p>
   <%= form_with(model: [@post, @post.likes.build], url: post_likes_path(@post)) do |form| %>
     <%= form.submit 'Like', class: 'btn-like' %>
