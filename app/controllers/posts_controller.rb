@@ -6,6 +6,7 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @posts = @user.posts.includes(:user, :comments).paginate(page: params[:page], per_page: 2)
   #    @posts = @user.posts.paginate(page: params[:page], per_page: 2)
+  
    end
 
   def show; end

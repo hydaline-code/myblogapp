@@ -20,17 +20,16 @@ RSpec.describe "Index", type: :system do
       expect(page).to have_content("Number of posts: #{@user1.posts_counter}")
     end
   end
+
   it 'clicks on a user and navigates to their profile page' do
     visit users_path
-
-    within('.user-card:first-child') do
-      click_link @user.name
-    end
-
-    expect(current_path).to eq(user_path(@user))
+    # Use find to locate the link and click it
+    # find('a', text: @user.name).click
+    click_link(@user.name)
+  
+    expect(page).to have_current_path(user_path(@user))
     expect(page).to have_content(@user.name)
     expect(page).to have_content(@user.bio)
-    # Add more expectations for the user's profile page
   end
   sleep(10)
 end
