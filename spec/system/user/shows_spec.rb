@@ -23,5 +23,20 @@ RSpec.describe "Shows", type: :system do
 
     expect(page).to have_button('See all posts')
   end
-  sleep(10)
+
+  it 'redirects to post show page when clicking on a post' do
+    visit user_path(@user)
+    
+    click_link "Post #{@post1.id}"
+    sleep(5)
+    expect(current_path).to eq(user_post_path(@user, @post1))
+  end
+  
+  it 'redirects to user posts index page when clicking "See all posts"' do
+    visit user_path(@user)
+    click_button('See all posts')
+    expect(current_path).to eq(user_posts_path(@user))
+  end
+ 
+  sleep(5)
 end

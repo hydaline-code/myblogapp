@@ -23,8 +23,7 @@ RSpec.describe "Index", type: :system do
 
   it 'clicks on a user and navigates to their profile page' do
     visit users_path
-    # Use find to locate the link and click it
-    # find('a', text: @user.name).click
+   
     click_link(@user.name)
   
     expect(page).to have_current_path(user_path(@user))
