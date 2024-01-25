@@ -3,9 +3,9 @@ require 'rails_helper'
 RSpec.describe "Shows", type: :system do
   before(:each) do
    @user = User.create(name: 'ila', photo_link: 'url', bio: 'This is bio', posts_counter: 0)
-    @post1 = Post.create(author_id: @user.id, text: 'A post1',  title: 'new title1',  comments_counter: 0, likes_counter: 0)
+   @post1 = Post.create(author_id: @user.id, text: 'A post1',  title: 'new title1',  comments_counter: 0, likes_counter: 0)
    @post2 = Post.create(author_id: @user.id, text: 'A post2',  title: 'new title2', comments_counter: 0, likes_counter: 0)
-  @post3 = Post.create(author_id: @user.id, text: 'A post3',  title: 'new title3', comments_counter: 0, likes_counter: 0)
+   @post3 = Post.create(author_id: @user.id, text: 'A post3',  title: 'new title3', comments_counter: 0, likes_counter: 0)
 
   end
 
