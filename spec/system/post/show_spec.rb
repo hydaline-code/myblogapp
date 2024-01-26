@@ -17,4 +17,16 @@ RSpec.describe "Post show page", type: :system do
     expect(page).to have_content("likes: #{@post.likes.count}")
    
   end
+
+  it 'displays  like creation  for  a post ' do
+  visit user_post_path(@user, @post)
+
+  Like.create(user_id: @user.id, post_id: @post.id
+  click_button 'Like'
+
+  expect(page).to have_content('Like created successfully')
+  expect(page).to have_content("likes: #{@post.likes.count}")
+  expect(page).to have_content(@user.name)
+end
+
 end
