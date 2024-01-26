@@ -28,5 +28,13 @@ RSpec.describe "Post show page", type: :system do
   expect(page).to have_content("likes: #{@post.likes.count}")
   expect(page).to have_content(@user.name)
 end
+ it 'displays post comments' do
+    comment_user = User.create(name: 'commenter', photo_link: 'commenter_url', bio: 'Commenter bio', posts_counter: 0)
+    comment = Comment.create(user_id: comment_user.id, post_id: @post.id, text: 'A comment')
 
+    visit user_post_path(@user, @post)
+
+    expect(page).to have_content(comment_user.name)
+    expect(page).to have_content(comment.text)
+  end
 end
