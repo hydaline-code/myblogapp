@@ -1,12 +1,10 @@
 require 'rails_helper'
 
 RSpec.describe 'Post show page', type: :system do
-  
   before(:each) do
     @user = User.create(name: 'Dengo', photo_link: 'url', bio: 'The Best Programmer', posts_counter: 0)
     @post = Post.create(author_id: @user.id, text: 'Read my story with on becoming the best programmer',
                         title: 'To become the Best programmer', comments_counter: 0, likes_counter: 0)
-  
   end
 
   it 'displays post details' do
@@ -17,7 +15,6 @@ RSpec.describe 'Post show page', type: :system do
     expect(page).to have_content(@post.text)
     expect(page).to have_content("comments: #{@post.comments.count}")
     expect(page).to have_content("likes: #{@post.likes.count}")
-   
   end
 
   it 'displays  like creation  for  a post ' do
