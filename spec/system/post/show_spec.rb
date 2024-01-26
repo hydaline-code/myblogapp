@@ -1,13 +1,15 @@
 require 'rails_helper'
 
-RSpec.describe "Post show page", type: :system do
+RSpec.describe 'Post show page', type: :system do
+  
   before(:each) do
     @user = User.create(name: 'Dengo', photo_link: 'url', bio: 'The Best Programmer', posts_counter: 0)
-    @post = Post.create(author_id: @user.id, text: 'Read my story with on becoming the best programmer here', title: 'My Journey to become the Best programmer ', comments_counter: 0, likes_counter: 0)
+    @post = Post.create(author_id: @user.id, text: 'Read my story with on becoming the best programmer',
+                        title: 'To become the Best programmer', comments_counter: 0, likes_counter: 0)
   
   end
 
-  it 'displays  details of a post' do
+  it 'displays post details' do
     visit user_post_path(@user, @post)
 
     expect(page).to have_content(@user.name)
@@ -19,16 +21,16 @@ RSpec.describe "Post show page", type: :system do
   end
 
   it 'displays  like creation  for  a post ' do
-  visit user_post_path(@user, @post)
+    visit user_post_path(@user, @post)
 
-  Like.create(user_id: @user.id, post_id: @post.id
-  click_button 'Like'
+    Like.create(user_id: @user.id, post_id: @post.id)
+    click_button 'Like'
 
-  expect(page).to have_content('Like created successfully')
-  expect(page).to have_content("likes: #{@post.likes.count}")
-  expect(page).to have_content(@user.name)
-end
- it 'displays post comments' do
+    expect(page).to have_content('Like created successfully')
+    expect(page).to have_content("likes: #{@post.likes.count}")
+    expect(page).to have_content(@user.name)
+  end
+  it 'displays post comments' do
     comment_user = User.create(name: 'commenter', photo_link: 'commenter_url', bio: 'Commenter bio', posts_counter: 0)
     comment = Comment.create(user_id: comment_user.id, post_id: @post.id, text: 'A comment')
 
