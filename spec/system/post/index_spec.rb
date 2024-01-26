@@ -27,8 +27,6 @@ RSpec.describe 'User post index page', type: :system do
       expect(page).to have_content("comments: #{post.comments.count}")
       expect(page).to have_content("likes: #{post.likes.count}")
     end
-
-   # expect(page).to have_selector('.pagination')
   end
   it 'displays the  pagination  information' do
     post3 = Post.create(author_id: @user.id, text: 'A post3', title: 'new title4', comments_counter: 0,
