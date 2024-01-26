@@ -8,7 +8,7 @@ RSpec.describe 'posts/index', type: :view do
 
   before do
     assign(:user, user)
-    assign(:posts, user.posts.paginate(page: 1, per_page: 2)) 
+    assign(:posts, user.posts.paginate(page: 1, per_page: 2))
     render
   end
 

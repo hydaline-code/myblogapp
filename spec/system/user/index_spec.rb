@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "Index", type: :system do
+RSpec.describe 'Index', type: :system do
   before(:each) do
     @user = User.create(name: 'chacha', photo_link: 'url', bio: 'bio', posts_counter: 0)
     @user1 = User.create(name: 'hyda', photo_link: 'url', bio: 'bio', posts_counter: 0)
@@ -23,9 +23,9 @@ RSpec.describe "Index", type: :system do
 
   it 'clicks on a user and navigates to their profile page' do
     visit users_path
-   
+
     click_link(@user.name)
-  
+
     expect(page).to have_current_path(user_path(@user))
     expect(page).to have_content(@user.name)
     expect(page).to have_content(@user.bio)
