@@ -1,7 +1,32 @@
 
 
+ feature/add_devise
+<!-- TABLE OF CONTENTS -->
+
+# 📗 Table of Contents
+
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 **BLOG APP** ](#-blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
+
+# 📖 **BLOG APP** <a name="about-project"></a>
+
 ## ![My blog](https://user-images.githubusercontent.com/57408419/178756743-c79afe4e-f60e-4ecb-90f9-de2edf808458.png)
-# 📖 **A Blog App** <a name="about-project"></a>
+# 📖 **A Blog App** <a name="about-project"></a> dev
 
 > A **Blog App** In fact, the word blog is short for weblog — a log of events maintained on a website. A blog application therefore is  a software program that provides an online environment and features for a bloggers. Bloggers are  **online  users** of the app. It  can be considered as a particular use of a CMS (Content Management System) where people can interact share and learn.
 
@@ -37,7 +62,10 @@
 > - **Comment on a blog**
 > - **Add controllers and routes to the app**
 > - **Add Rspecs controllers testing using requests**
+ feature/add_devise
+> - **Application of Devise for authorization**
 > - **Add Rspecs  integration testing fot the views**
+ dev
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -101,6 +129,10 @@
 👤 **Hydaline Charlene**
 
 > - GitHub: [hydaline](https://github.com/hydaline-code)
+
+👤 **Omet Omeni**
+
+> - GitHub: [hydaline](https://github.com/ometman)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
