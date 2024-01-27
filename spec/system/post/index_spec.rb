@@ -1,4 +1,3 @@
-
 require 'rails_helper'
 
 RSpec.describe 'User post index page', type: :system do
