@@ -22,20 +22,19 @@ class CommentsController < ApplicationController
     end
   end
 
-def destroy
-  @comment = Comment.find(params[:id])
-  @post = @comment.post
+  def destroy
+    @comment = Comment.find(params[:id])
+    @post = @comment.post
 
-  authorize! :destroy, @comment
+    authorize! :destroy, @comment
 
-  @comment.destroy
+    @comment.destroy
 
-  respond_to do |format|
-    flash[:notice] = 'Comment successfully deleted.'
-    format.html { redirect_to user_post_path(@post.author_id, @post.id) }
+    respond_to do |format|
+      flash[:notice] = 'Comment successfully deleted.'
+      format.html { redirect_to user_post_path(@post.author_id, @post.id) }
+    end
   end
-end
-
 
   private
 
