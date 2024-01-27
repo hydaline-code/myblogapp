@@ -15,6 +15,10 @@
   <%= form_with(model: [@post, @post.likes.build], url: post_likes_path(@post)) do |form| %>
     <%= form.submit 'Like', class: 'btn-like' %>
   <% end %>
+<%if can?(:destroy, @post)%>
+
+ <%= button_to "DELETE POST", user_post_path(user_id:@post.author_id, id:@post.id), method: :delete%>
+<% end %>
 </div>
 
    
@@ -24,7 +28,13 @@
     <ul>
         <strong><%= comment.user.name %></strong>: <%= comment.text %>
         </ul>
+        <%if can?(:destroy, comment)%>
+        <%= button_to "DELETE COMMENT", user_post_comment_path(user_id: comment.user_id, post_id: comment.post_id, id: comment.id), method: :delete%>
+        <%end%>
     <% end %>
+   
+  
+
   </div> 
   
    </div>

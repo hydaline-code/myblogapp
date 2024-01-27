@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   before_action :find_user
   before_action :find_post, only: [:show]
+  load_and_authorize_resource
 
   def index
     @user = User.find(params[:user_id])
@@ -23,6 +24,15 @@ class PostsController < ApplicationController
       redirect_to user_post_path(current_user, @post)
     else
       render :new
+    end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    respond_to do |format|
+      format.html { redirect_to user_posts_path(user_id: @post.author_id) }
+      format.js
     end
   end
 
