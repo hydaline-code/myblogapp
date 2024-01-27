@@ -6,22 +6,23 @@
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 **BLOG APP** ](#-blog-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 # 📖 **BLOG APP** <a name="about-project"></a>
 
@@ -64,6 +65,7 @@
 > - **Comment on a blog**
 > - **Add controllers and routes to the app**
 > - **Add Rspecs controllers testing using requests**
+> - **Application of Devise for authorization**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -127,6 +129,10 @@
 👤 **Hydaline Charlene**
 
 > - GitHub: [hydaline](https://github.com/hydaline-code)
+
+👤 **Omet Omeni**
+
+> - GitHub: [hydaline](https://github.com/ometman)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
