@@ -15,6 +15,7 @@
  <%  @user.most_recent_posts.each_with_index do |post, index|%>
 <div class="allposts-user">
      <h3><%= link_to "Post #{post.id}", user_post_path(@user, post) %></h3>
+     <h3 class="p-title"><%= post.title %></h3>
       <p class="p-text"><%= post.text %></p>
       <div class="likes">
         <p class="post-comment"> comments: <%= post.comments.count %></p>
