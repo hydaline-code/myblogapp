@@ -1,37 +1,19 @@
-<a name="readme-top"></a>
 
-<h1><b>Blog App</b></h1>
 
-<!-- TABLE OF CONTENTS -->
-
-# 📗 Table of Contents
-
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Setup](#setup)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [📝 License](#license)
-
-# 📖 **BLOG APP** <a name="about-project"></a>
+## ![My blog](https://user-images.githubusercontent.com/57408419/178756743-c79afe4e-f60e-4ecb-90f9-de2edf808458.png)
+# 📖 **A Blog App** <a name="about-project"></a>
 
 > A **Blog App** In fact, the word blog is short for weblog — a log of events maintained on a website. A blog application therefore is  a software program that provides an online environment and features for a bloggers. Bloggers are  **online  users** of the app. It  can be considered as a particular use of a CMS (Content Management System) where people can interact share and learn.
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> This application is built on Ruby on Rails and PostgreSQL as a Database.
+> This application is built with PostgreSQL as a Database.
+<a href="https://www.postgresql.org/" target="_blank" rel="noreferrer"> <img
+      src="https://user-images.githubusercontent.com/57408419/178756727-8bfad119-18c2-49eb-98be-8b2d4bd71dd6.jpeg"
+      alt="react" width="120" height="70" /> </a>
 
 <details>
   <summary>Ruby</summary>
@@ -44,13 +26,6 @@
   <summary>Ruby on Rails</summary>
   <ul>
     <li><a href="https://guides.rubyonrails.org/">Ruby on Rails</a></li>
-  </ul>
-</details>
-
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -153,13 +128,3 @@
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-> I would like to thank Microverse for giving me this opportunity to learn this broad.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](https://github.com/hydaline-code/myblogapp/blob/dev/LICENSE) licensed.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
