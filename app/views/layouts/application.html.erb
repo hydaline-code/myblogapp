@@ -12,14 +12,14 @@
 
   <body>
     <p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+    <p class="alert"><%= alert %></p>
 
     <%= yield %>
     <% flash.each do |key, value| %>
-  <div id="flash" class="alert alert-<%= key %>">
-    <%= value %>
-  </div>
-<% end %>
+      <div id="flash" class="alert alert-<%= key %>">
+        <%= value %>
+      </div
+    <% end %>
 
 
   </body>
