@@ -15,7 +15,7 @@
   <%= form_with(model: [@post, @post.likes.build], url: post_likes_path(@post)) do |form| %>
     <%= form.submit 'Like', class: 'btn-like' %>
   <% end %>
-  <button>Delete post </button>
+ <%= button_to "DELETE POST", user_post_path(user_id:@post.author_id, id:@post.id), method: :delete%>
 </div>
 
    
