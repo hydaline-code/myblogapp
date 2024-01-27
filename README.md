@@ -31,14 +31,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
 > - **Create a User**
 > - **Post a blog**
 > - **Like a blog**
 > - **Comment on a blog**
 > - **Add controllers and routes to the app**
 > - **Add Rspecs controllers testing using requests**
+> - **Add Rspecs  integration testing fot the views**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
