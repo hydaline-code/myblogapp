@@ -1,0 +1,20 @@
+<%= form_with(model: @post, url: user_posts_path(@user), method: :post) do |form| %>
+  
+  <div class="form">
+    <h3>Add a new Post</h3>
+  <div class="label" >
+    <%= form.label :title %>
+    <%= form.text_field :title, placeholder: "Title", required: true, class: "form-label" %>
+  </div>
+
+  <div class=form-t>
+    <%= form.label :text %>
+    <%= form.text_area :text, placeholder: "Type your post here!", rows: 20, required: true, class: "form-text" %>
+  </div>
+
+  <div>
+    <%= form.submit "Save", class: "btn-primary" %>
+  </div>
+
+<% end %>
+</div>

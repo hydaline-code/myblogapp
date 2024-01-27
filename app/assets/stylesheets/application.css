@@ -1,3 +1,4 @@
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -13,3 +14,201 @@
  *= require_tree .
  *= require_self
  */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 32px;
+}
+
+.user-post,
+.a-post {
+  border: solid 2px;
+  padding: 0 0.5em 0 0.5em;
+  margin: 1em 0 0 1em;
+}
+
+.user-info {
+  border: rgb(0, 0, 0) 2px solid;
+  margin-left: 1em;
+  padding: 8px;
+  height: 60px;
+  flex-grow: 1;
+}
+
+.user-image {
+  border: rgb(0, 0, 0) 2px solid;
+  width: 100px;
+  height: 80px;
+}
+
+.user-card {
+  margin-top: 0.5em;
+  display: flex;
+}
+
+.user-info > h3 {
+  position: absolute;
+}
+
+.user-info > p {
+  margin-left: 3em;
+  text-align: right;
+  position: relative;
+  top: 1.5em;
+}
+
+.posttext {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-bio,
+.post-id {
+  border: rgb(0, 0, 0) 2px solid;
+  margin-top: 1em;
+  text-align: left;
+}
+
+.user-bio > p {
+  margin-left: 0.5em;
+}
+
+.allposts-user {
+  border: rgb(0, 0, 0) 2px solid;
+  margin-top: 1em;
+}
+
+.likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-right: 0.5em;
+}
+
+.allposts-user > h3,
+.p-text {
+  margin-left: 0.3em;
+}
+
+.post-comment {
+  margin-right: 0.3em;
+}
+
+.user-post button {
+  margin: 2em 0 1em 0;
+  position: relative;
+  left: 50%;
+}
+
+.all-comments {
+  height: auto;
+  border: rgb(0, 0, 0) 2px solid;
+}
+
+.all-comments li {
+  list-style: none;
+  text-align: left;
+}
+
+.post-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.likes-comment {
+  display: flex;
+}
+
+.likes-comment p {
+  margin-left: 0.3em;
+}
+
+.post-text {
+  margin: 0.5em 0 0 0.5em;
+}
+
+.pagination {
+  text-align: center;
+  margin-top: 1em;
+}
+
+.pagination a {
+  text-decoration: none;
+}
+
+.form h3 {
+  margin-top: 1em;
+}
+
+.form-text {
+  width: 70%;
+  height: 50px;
+  margin-left: 1em;
+}
+
+.label {
+  margin-top: 1em;
+}
+
+.form-label {
+  width: 68%;
+  margin-left: 1em;
+  margin-bottom: 1em;
+}
+
+.form-t {
+  display: flex;
+}
+
+.btn-primary,
+.btn-comment {
+  width: 70px;
+  padding: 0.2em;
+  margin: 10% 0  0 40%;
+  font-size: 14px;
+  border: 2px solid #72c5fc;
+  color: #fff;
+  background-color: #3498db;
+  border-radius: 50px;
+}
+
+.btn-like {
+  background-color: #3498db;
+  border: 2px solid #72c5fc;
+  color: #fff;
+  border-radius: 50px;
+  margin-right: 1em;
+  width: 50px;
+}
+
+.form-comment {
+  width: 90%;
+  height: 40px;
+  margin-left: 5px;
+}
+
+.btn-comment {
+  width: 100px;
+}
+
+.form .flex {
+  display: flex;
+  margin-top: 1em;
+}
+
+.alert-container {
+  position: relative;
+}
+
+.alert {
+  background: rgb(55, 173, 206);
+  position: absolute;
+  top: 2px;
+  color: white;
+  left: 10%;
+  border-radius: 2px;
+  padding: 5px;
+}
